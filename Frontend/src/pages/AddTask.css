@@ -1,0 +1,12 @@
+.add-task-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px 15px;
+}
+
+.add-task-title {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+  font-size: 24px;
+}

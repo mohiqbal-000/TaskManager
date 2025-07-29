@@ -1,0 +1,126 @@
+.task-list-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.task-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.add-task-btn {
+  padding: 8px 14px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.add-task-btn:hover {
+  background-color: #004999;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  color:#333;
+}
+
+.task-item {
+  background-color: #f4f4f4;
+  padding: 16px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-content {
+  max-width: 60%;
+}
+
+.task-content.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-actions .btn {
+  margin-left: 8px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-toggle {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.btn-edit {
+  background-color: #f39c12;
+  color: white;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+.task-list-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333; /* or any visible color */
+}
+.priority-badge {
+  margin-left: 8px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.priority-high {
+  background-color: #e74c3c; /* red */
+}
+
+.priority-medium {
+  background-color: #f1c40f; /* yellow */
+  color: #000;
+}
+
+.priority-low {
+  background-color: #2ecc71; /* green */
+}
+
+.search-input {
+  padding: 8px;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 260px;
+}
+.task-item.dragging {
+  background-color: #dcdcdc;
+  border: 2px dashed #aaa;
+}
+.drag-handle {
+  cursor: grab;
+  font-size: 18px;
+  padding: 0 10px;
+  user-select: none;
+  color: #888;
+  align-self: center;
+}
