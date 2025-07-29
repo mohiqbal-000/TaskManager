@@ -1,12 +1,110 @@
-# React + Vite
+# ✅ Task Manager App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack task management application built with **Spring Boot** (backend) and **React** (frontend). It features user authentication with **JWT**, task creation, editing, filtering, and prioritization.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔐 User authentication (JWT-based login/register)
+- 📝 Create, read, update, delete tasks (CRUD)
+- 🏷️ Set task priority (High/Medium/Low)
+- 🔍 Search and filter tasks
+- 📆 Support for recurring tasks (optional)
+- 🔒 Protected routes for authenticated users
+- 🎨 Clean and responsive UI (React + CSS)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+| Layer       | Technology          |
+|-------------|---------------------|
+| Frontend    | React, React Router |
+| Backend     | Spring Boot, REST API |
+| Security    | Spring Security, JWT |
+| Database    | MySQL / PostgreSQL (or H2 for dev) |
+| Tools       | Maven, IntelliJ / VSCode |
+| Deployment  | Docker *(optional)* |
+
+---
+
+## 📷 Screenshots
+
+
+<img width="1388" height="775" alt="logi (2)" src="https://github.com/user-attachments/assets/728d29de-a8e0-4230-b6b2-6564dbd99053" />
+<br/>
+
+<img width="1400" height="768" alt="tasklist (2)" src="https://github.com/user-attachments/assets/1b06832a-7252-4c5b-b21f-2b0359f2c5be" />
+<br/>
+
+<img width="1379" height="728" alt="addtask (2)" src="https://github.com/user-attachments/assets/a10afebc-4fc8-4c3f-ae63-55bb646a6591" />
+
+
+
+---
+
+## 📂 Project Structure
+TaskManager/
+├── backend/ # Spring Boot application
+│ ├── src/
+│ └── pom.xml
+├── frontend/ # React application
+│ ├── src/
+│ └── package.json
+└── README.md
+
+
+
+
+
+
+---
+
+## 🧪 Getting Started
+
+### 📦 Prerequisites
+
+- Java 17+
+- Node.js 18+
+- PostgreSQL (or H2 for development)
+
+### 🔧 Backend Setup
+
+```bash
+cd backend
+./mvnw spring-boot:run
+App will be running at: http://localhost:3000
+
+🔐 API Endpoints
+Auth (/api/auth)
+POST /login
+
+POST /register
+
+Tasks (/api/tasks)
+GET /all
+
+POST /create
+
+PUT /update/{id}
+
+DELETE /delete/{id}
+
+All task routes require JWT token in Authorization header.
+
+🧰 Future Enhancements
+⏰ Add due date & reminders
+
+📱 Mobile responsive UI
+
+📨 Email notifications
+
+☁️ Docker + Microservices (AuthService & TaskService split)
+
+🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+Feel free to open a pull request or create an issue.
+
+👨‍💻 Author
+Mohammed Iqbal
